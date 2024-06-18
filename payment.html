@@ -5,63 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment</title>
     <link rel="stylesheet" href="stylePayment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>JogJAGO</h1>
-        </div>
-        <div class="payment-container">
-            <div class="payment-methods">
-                <h2>How would you like to pay?</h2>
-                <form>
-                    <div class="payment-option">
-                        <input type="radio" id="bank-transfer" name="payment" value="bank-transfer">
-                        <label for="bank-transfer">
-                            <span>Bank Transfer BCA</span>
-                            <img src="bca-logo.png" alt="BCA">
-                        </label>
-                    </div>
-                    <div class="payment-option">
-                        <input type="radio" id="virtual-account" name="payment" value="virtual-account">
-                        <label for="virtual-account">
-                            <span>BCA Virtual Account</span>
-                            <img src="bca-logo.png" alt="BCA">
-                        </label>
-                    </div>
-                    <div class="payment-option">
-                        <input type="radio" id="qris" name="payment" value="qris">
-                        <label for="qris">
-                            <span>Qris</span>
-                            <img src="qris-logo.png" alt="Qris">
-                        </label>
-                    </div>
-                    <div class="coupon">
-                        <label for="coupon">Apply Coupons</label>
-                        <input type="text" id="coupon" name="coupon" placeholder="Masukkan Kupon yang tersedia">
-                        <button type="button">Apply</button>
-                    </div>
-                    <div class="total-price">
-                        <span>Total Price</span>
-                        <span>Rp 345.566</span>
-                    </div>
-                    <button type="submit" class="pay-button">Pay with BCA Virtual Account</button>
-                </form>
+    <header>
+        <nav>
+            <div class="logo">
+                <p>Jog<a>JAGO</a></p>
             </div>
-            <div class="order-summary">
-                <h3>Order Summary</h3>
-                <p><strong>Booking ID:</strong> 5555555555555</p>
-                <p><strong>Order Details:</strong> Budaya Tour by ajaya transport</p>
-                <p><strong>Wednesday, 19 June 2024</strong></p>
-                <p>07.00 - 08.00</p>
-                <h4>Riwayat</h4>
+            <div class="menu">
                 <ul>
-                    <li>Paket dipesan</li>
-                    <li>Kupon diberikan</li>
-                    <li>penilaian Agent</li>
+                    <li><a href="#travel">Payment</a></li>
                 </ul>
             </div>
+        </nav>
+    </header>
+    <main>
+        <div class="payment-menu">
+            <div class="option">
+                <h1>How would you like to pay? </h1>
+                <div class="bank">
+                    <div class="name"> 
+                        <input type="radio" id="bca">
+                        <label for="bca">Bank Transfer BCA</label>
+                    </div>
+                    <img src="Arrow_right_circle.png" alt="">
+                </div>
+                <div class="bank">
+                    <div class="name"> 
+                        <input type="radio" id="va">
+                        <label for="va">BCA Virtual Account</label>
+                    </div>
+                    <img src="Arrow_right_circle.png" alt="">
+                </div>
+                <div class="bank">
+                    <div class="name"> 
+                        <input type="radio" id="qris">
+                        <label for="qris">Q-RIS</label>
+                    </div>
+                    <img src="Arrow_right_circle.png" alt="">
+                </div>
+                <div class="bank">
+                    <div class="name"> 
+                        <input type="radio" id="gopay">
+                        <label for="gopay">GoPay</label>
+                    </div>
+                    <img src="Arrow_right_circle.png" alt="">
+                </div>
+            </div>
+            <div class="confirm">
+                <div class="coupon">
+                    <div class="text">
+                        <p>Apply Coupons</p>
+                        <p>Masukkan Kupon yang tersedia</p>
+                    </div>
+                    <p>Apply</p>
+                </div>
+                <div class="total">
+                    <div class="text-1">
+                        <p>Total Price</p>
+                        <p>Rp. 345.566</p>
+                    </div>
+                    <button>Pay with BCA Virtual Account</button>
+                </div>
+            </div>
+            
         </div>
-    </div>
+        <div class="payment-detail">
+            <div class="sum">
+                <p>Order Summary</p>
+                <p>Booking ID : 55555555555</p>
+            </div>
+            <div class="order-detail">
+                <p class="title">Order Details</p>
+                <p class="type">Budaya Tout bg alya transport</p>
+                <p>Wednesday, 19 june 2024</p>
+                <p>07.00 - 08.00</p>
+            </div>
+            <div class="riwayat">
+                <p class="title">Riwayat</p>
+                <p>Paket dipesan</p>
+                <p>Kupon diberikan</p>
+                <p>Penilaian Agent</p>
+            </div>
+
+        </div>
+
+    </main>
+    
 </body>
 </html>
