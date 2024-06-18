@@ -181,7 +181,10 @@ main{
 .order p, .myprofile .content-myprofile{
     font-size: 0.9rem;
 }
-
+.myprofile .content-myprofile a{
+    text-decoration: none;
+    color: black;
+}
 .myprofile{
     display: flex;
     padding: 1rem 1.5rem 2rem 1.5rem;
