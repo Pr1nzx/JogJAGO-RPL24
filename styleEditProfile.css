@@ -1,0 +1,329 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body{
+    line-height: 1.6;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    min-width: 800px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+header{
+    
+    padding: 1rem 0;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3rem 0 2rem;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.1rem;
+    list-style-type: none;
+}
+
+.logo p{
+    font-size: 2rem;
+    font-weight: 800;
+    color: #FBBC05;
+}
+
+.logo a{
+    color: #EB4335;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.menu li.logout a {
+    font-size: 0.9rem;
+    color: white;
+    margin-left: 0.5rem;
+    padding: 0.7rem 1rem;
+    background-color: red;
+    border-radius: 7px;
+    transition: transform 0.3s ease;
+}
+
+.menu li.logout a:hover {
+  /* lagi sadar iki udu button tai */
+}
+
+main{
+    height: 38rem;
+    background-color: white;
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    padding: 2rem 2rem;
+    margin-top: 5rem;
+}
+
+.about-profile{
+    display: flex;
+    width: 23rem;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.name-profile{
+    display: flex;
+    padding: 1rem 1.5rem;
+    gap: 1rem;
+    justify-content: start;
+    align-items: center;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+.name-profile img{
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+}
+.name-profile .text-1 .name, .name-profile .text-1 .membership{
+    font-size: 1.3rem;
+}
+.name-profile .text-1 .name{
+    font-weight: 800;
+}
+.name-profile .text-1 .membership{
+    font-weight: 500;
+    color: grey;
+}
+.benefit{
+    display: flex;
+    padding: 1rem 1.5rem 2.3rem 1.5rem;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+.benefit .item-benefit{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 800;
+    font-size: 1rem;
+}
+.item-benefit .gopay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+} 
+.item-benefit .gopay img, .item-benefit-member img{
+    border-radius: 50%;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.item-benefit-member{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 0.7rem;
+}
+.item-benefit-member .detail-member{
+    margin-top: -0.2rem;
+}
+.item-benefit-member .detail-member a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 800;
+}
+.detail-benefit{
+    display: flex;
+    font-size: 0.9rem;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 7.5rem;
+}
+.detail-benefit p:last-of-type{
+    font-weight: 800;
+}
+
+.order{
+    display: flex;
+    padding: 1rem 1.5rem 2.1rem 1.5rem;
+    gap: 0.1rem;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+.order h1, .myprofile h1{
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.order p, .myprofile .content-myprofile{
+    font-size: 0.9rem;
+}
+
+.myprofile{
+    display: flex;
+    padding: 1rem 1.5rem 2rem 1.5rem;
+    gap: 0.1rem;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    
+}
+
+.editprofile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid black;
+    width: 50rem;
+    padding: 1.5rem 1rem;
+    height: 35rem;
+}
+
+.profile-photo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 22rem;
+    height: 35rem;
+    
+}
+.upload-photo{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    border: 1px solid black;
+    height: 29rem;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+.upload-photo img{
+    width: 20rem;
+    height: 20rem;
+}
+.upload-photo button{
+    width: 20rem;
+    height: 2.5rem;
+    font-size: 1.3rem;
+    background-color: #EB4335;
+    border: none;
+    border-radius: 7px;
+    font-weight: 550;
+    color: white;
+    cursor: pointer;
+}
+
+.upload-photo p{
+    font-size: 0.9rem;
+    padding-right: 5rem;
+}
+.profile-photo > button{
+    border: none;
+    height: 1.5rem;
+    background-color: rgb(220, 205, 205);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.detail-profile{
+    width: 27rem;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.detail-profile > .item > .title{
+    font-size: 0.8rem;
+    font-weight: 550;
+}
+.detail-profile > .item > input{
+    width: 26rem;
+    height: 1.5rem;
+    border-radius: 4px;
+    border: 0.7px solid rgb(159, 156, 156);
+}
+.detail-profile > .submit{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: end;
+    margin-right: 1rem;
+}
+.detail-profile > .submit > button{
+    width: 6.5rem;
+    height: 1.7rem;
+    font-size: 0.8rem;
+    border: none;
+    background-color: #EB4335;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.item-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding-left: 0.2rem;
+    font-size: 0.8rem;
+    font-weight: 570;
+}
+.item-contact .item{
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.item-contact .email input{
+    margin-left: 1.8rem;
+    
+}
+.item-contact .password input{
+    margin-left: 0.2rem;
+}
+.item-contact .password button{
+    font-size: 0.7rem;
+    width: 12rem;
+    height: 1.5rem;
+    margin-right: 0.9rem;
+    background-color: #EB4335;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.item-contact input{
+    padding-left: 0.5rem;
+    width: 20rem;
+    height: 1.5rem;
+    border-radius: 4px;
+    border: 0.7px solid rgb(159, 156, 156);
+}
+
+

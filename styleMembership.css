@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body{
+    line-height: 1.6;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    min-width: 800px;
+    background-image: url("https://ik.imagekit.io/tvlk/blog/2020/01/wisata-malam-jogja-4-Unsplash.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+h1{
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+main .membership{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    
+}
+.detail-membership{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: aqua;
+    height: 26rem;
+    width: 15rem;
+    padding: 1rem 1.5rem;
+    background-color: rgba(225, 225, 225, 0.5);
+    backdrop-filter: blur(2px);
+    border-radius: 15px;
+}
+.title{
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+.price{
+    font-size: 2rem;
+    font-weight: 800;
+}
+h2 a{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    
+}
+.detail-benefit{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.detail-benefit img{
+    margin-top: -1.4rem;
+    width: 1rem;
+    height: 1rem;
+}
+.detail-benefit p{
+    padding-right: 1.5rem;
+    font-weight: 550;
+}
+button{
+    height: 2.5rem;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #EB4335;
+    color: white;
+    font-weight: 550;
+    border-radius: 10px;
+    cursor: pointer;
+}

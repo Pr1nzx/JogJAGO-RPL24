@@ -1,0 +1,263 @@
+/* Reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    line-height: 1.6;
+}
+
+/* Header and navigation */
+header {
+    background-color: #333;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo p {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.logo a {
+    color: #f39c12;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.menu ul li {
+    font-size: 1rem;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #f39c12;
+}
+
+.btn-regis a {
+    background-color: #f39c12;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Main section styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.home {
+    text-align: center;
+    background: url('https://lh3.googleusercontent.com/p/AF1QipOL0suxaSdnNTNtwOScE1G7xltqf3wD67Ziufvg=s1360-w1360-h1020') no-repeat center center/cover;
+    color: #fff;
+    padding: 4rem 1rem;
+}
+
+.home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.home p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.home a {
+    background-color: #f39c12;
+    padding: 0.75rem 1.5rem;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.about,
+.explore,
+.travel,
+.tambahan {
+    padding: 2rem 1rem;
+}
+
+.about .text {
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+    text-align: center;
+}
+
+.about .text h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about .text p {
+    font-size: 1rem;
+}
+
+.about .img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Explore section */
+.explore .items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.explore .item {
+    flex: 1 1 calc(33.333% - 1rem);
+    background-color: #f1f1f1;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.explore .item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.explore .item p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.tambahan .text-1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.tambahan .text-1 .item {
+    flex: 1 1 calc(33.333% - 1rem);
+    background-color: #f1f1f1;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.tambahan .text-1 .item h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.tambahan .text-1 .item p {
+    font-size: 1rem;
+}
+
+.tambahan img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 2rem 0;
+}
+
+.tambahan .text-2 {
+    text-align: center;
+}
+
+.tambahan .text-2 p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.tambahan .text-2 h2 {
+    font-size: 2rem;
+}
+
+.travel .items-trvl {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.travel .trvlitem {
+    flex: 1 1 calc(33.333% - 1rem);
+    background-color: #f1f1f1;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.travel .trvlitem img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.travel .trvlitem .harga {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.travel .trvlitem .title {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.travel .trvlitem .time {
+    font-size: 1rem;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+footer .footcontent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+footer .footcontent .item {
+    flex: 1 1 calc(33.333% - 1rem);
+}
+
+footer .footcontent .item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+footer .footcontent .item p {
+    font-size: 1rem;
+}
+
+footer .footer-bottom {
+    margin-top: 2rem;
+}
