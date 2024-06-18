@@ -211,3 +211,7 @@ section header {
     margin: 5px 0;
     color: gray;
 }
+.tour-card a{
+    text-decoration: none;
+    color: black;
+}
