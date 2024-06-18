@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body{
+    line-height: 1.6;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    min-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+}
+
+main{
+    height: 50rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.chat{
+    width: 63.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.customer{
+    border-bottom: 1px solid grey;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+}
+.customer-profile p{
+    font-size: 1rem;
+    color: black;
+    font-weight: 550;
+}
+.customer-profile p:last-of-type{
+    font-size: 0.9rem;
+    color: grey;
+    font-weight: 400;
+}
+
+.customer img{
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+.profile-cs{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 15.4rem;
+    border-left: 1px solid gray;
+}
+.profile-cs > img{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
+.name{
+    font-size: 1.3rem;
+    font-weight: 550;
+}
+.ket{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: grey;
+}
+button{
+    width: 12rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 10rem;
+    margin-left: -1.5rem;
+    align-items: start;
+}
+
+.menu-item{
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+}
+
+.menu-item p{
+    font-weight: 600;
+}
