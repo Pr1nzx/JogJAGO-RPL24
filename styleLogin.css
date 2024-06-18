@@ -110,8 +110,7 @@ label{
 }
 
 .reset-menu{
-    margin: 0;
-    margin-right: 12.5rem;
+ 
     color: white;
     display: flex;
     gap: 0.2rem;
@@ -123,10 +122,8 @@ label{
     align-items: center;
     gap: 0.1rem;
     text-decoration: none;
-    color: #FBBC05;
-    font-size: 0.8rem;
-    font-weight: 700;
-    font-style: italic;
+    color: #EB4335;
+   
 }
 .reset-menu a p{
     color: #EB4335;
