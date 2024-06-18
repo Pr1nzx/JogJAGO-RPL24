@@ -75,9 +75,10 @@ main{
     font-size: 1rem;
     color: grey;
 }
-button{
-    width: 12rem;
-    height: 2.5rem;
+a{
+    padding: 0.7rem 2rem;
+    text-decoration: none;
+    font-weight: 550;
     font-size: 1rem;
     border: none;
     border-radius: 8px;
@@ -97,9 +98,52 @@ button{
 .menu-item{
     display: flex;
     gap: 1rem;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
 }
-
+.menu-item img{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 0.3rem;
+}
 .menu-item p{
     font-weight: 600;
+}
+.chat-area{
+    height: 40rem;
+}
+
+
+
+.message-container {
+    display: flex;
+    margin: 0.7rem;
+    margin-top: 1.2rem;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 0.4rem;
+    width: 61rem;
+}
+
+.message-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0.5rem;
+    font-size:0.9rem;
+    border-radius: 20px;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
 }

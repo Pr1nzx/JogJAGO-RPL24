@@ -102,19 +102,14 @@ label{
 .login-menu{
     color: white;
     display: flex;
-    gap: 0.2rem;
-}
+    
+    }
 .login-menu a{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.1rem;
+ 
+  
     text-decoration: none;
-    color: #FBBC05;
-    font-size: 0.8rem;
-    font-weight: 700;
-    font-style: italic;
-}
-.login-menu a p{
-    color: #EB4335;
+    color: #EB4335
+   
+    
+
 }
