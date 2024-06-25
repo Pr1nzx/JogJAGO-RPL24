@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body{
+    line-height: 1.6;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    min-width: 800px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center; */
+}
+
+header{
+    
+    padding: 1rem 0;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3rem 0 2rem;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.1rem;
+    list-style-type: none;
+}
+
+.logo p{
+    font-size: 2rem;
+    font-weight: 800;
+    color: #FBBC05;
+}
+
+.logo a{
+    color: #EB4335;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.menu li.logout a {
+    font-size: 0.9rem;
+    color: white;
+    margin-left: 0.5rem;
+    padding: 0.7rem 1rem;
+    background-color: red;
+    border-radius: 7px;
+    transition: transform 0.3s ease;
+}
+main{
+    height: 38rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+main>h1{
+    font-size: 1.5rem;
+    margin-left: -65rem;
+
+}
+.menu-main{
+    display: flex;
+    width: 68.5rem;
+    gap: 35rem;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3);
+    padding: 0.5rem 1rem;
+    justify-content: start;
+
+}
+.menu2{
+    padding-left: 1rem;
+    border-left: 1px solid grey;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.item-img{
+    width: 20rem;
+    height: 15rem;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+}
+.description {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    padding: 0.5rem;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    padding-bottom: 1.5rem;
+}
+.description .text{
+    display: flex;
+    flex-direction: column;
+}
+.description .text h1{
+    font-size: 1.3rem;
+}
+.addess{
+    display: flex;
+    margin-top: -1rem;
+    flex-direction: row;
+}
+.address p{
+    font-size: 0.9rem;
+}
+
+.recommend{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.icon{
+    display: flex;
+    align-items: center;
+}
+.rating{
+    display: flex;
+    gap: 1rem;
+}
+.button{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.fav, .view{
+    height: 2.5rem;
+    padding: auto;
+    border: none;
+    border-radius: 8px;
+}
+.fav{
+    width: 2.5rem;
+}
+
+.view{
+    width: 35rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #EB4335;
+
+}
