@@ -7,10 +7,10 @@ body{
     line-height: 1.6;
     font-family: "Plus Jakarta Sans", sans-serif;
     min-width: 800px;
-    background-image: url("https://ik.imagekit.io/tvlk/blog/2020/01/wisata-malam-jogja-4-Unsplash.jpg");
-    background-repeat: no-repeat; 
+    background-image: url("/image/jogja-bg2.png");
+    background-repeat: repeat-x; 
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     height: 100vh;
     display: flex;
     flex-direction: column;
