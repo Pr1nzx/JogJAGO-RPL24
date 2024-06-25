@@ -128,4 +128,9 @@ label{
 .reset-menu a p{
     color: #EB4335;
 }
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
