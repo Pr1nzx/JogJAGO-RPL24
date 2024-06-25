@@ -19,33 +19,53 @@
                 <p>Jog<a>JAGO</a></p>
             </div>
         </div>
-    
-        <div class="input email">
-            <h3>Email</h3>
-            <input type="email" placeholder="Please Enter Your Email...">
-        </div>
-        <div class="input password">
-            <h3>Password</h3>
-            <input type="password" placeholder="Please Enter Your Password...">
-        </div>
 
-        <div class="remember">
-            <label for="remember">Remember Me</label>
-            <input type="checkbox" name="choices" id="remember">
-        </div>
-        
-        <div class="login">
-            <button>Sign In</button>
-        </div>
-
-        <div class="reset-menu">
-            <p>Forgot Your Password?</p>
-            <a href="resetpassword.html">
-                Reset<p> Here</p>
-            </a>
-        </div>
+        <form onsubmit="validateLogin(event)">
+            <div class="input email">
+                <h3>Email</h3>
+                <input type="email" id="email" placeholder="username@gmail.com" required>
+            </div>
+            <div class="input password">
+                <h3>Password</h3>
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <div class="reset-menu">
+                <p>Forgot your password?</p>
+                <a href="resetpassword.html">
+                    Reset<p> here</p>
+                </a>
+            </div>
+            <div class="remember">
+                <label for="remember">Remember me</label>
+                <input type="checkbox" name="choices" id="remember">
+            </div>
+            
+            <div class="login">
+                <button type="submit">Sign In</button>
+            </div>
+        </form>
         
     </main>
-    
+    <script>
+        let failedAttempts = 0;
+
+        function validateLogin(event) {
+            event.preventDefault(); 
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+
+            if (email === 'admin@gmail.com' && password === '123') {
+                window.location.href = 'index.html';
+            } else {
+                failedAttempts++;
+                if (failedAttempts >= 3) {
+                    window.location.href = 'resetpassword.html';
+                    alert('Password Anda Salah Lebih dari 3x, Silahkan Reset Password Anda!');
+                } else {
+                    alert('Password Anda Salah, Silahkan Isi Ulang');
+                }
+            }
+        }
+    </script>
 </body>
 </html>
