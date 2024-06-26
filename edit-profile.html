@@ -18,7 +18,7 @@
             <div class="menu">
                 <ul>
                     <li><a href="#travel">Edit Profile</a></li>
-                    <li class="logout"><a href="">Log Out</a></li>
+                    <li class="logout"><a href="login.html">Log Out</a></li>
                 </ul>
             </div>
         </nav>
@@ -69,7 +69,7 @@
             <div class="myprofile">
                 <h1>Profile Saya</h1>
                 <div class="content-myprofile">
-                    <a href="wishlist.html">Whishlist</a>
+                    <a href="wishlist.html">Wishlist</a>
                     <p>Favorit</p>
                     <a href="ticket.html">My Tour</a>
                 </div>
@@ -81,15 +81,15 @@
                 <div class="upload-photo">
                     <img src="/image/profile-asset1.jpeg" alt="">
                     <button>Pilih Foto</button>
-                    <p>Besar file : maksimum adalah 2 MB. Ekstennsi file yang diperbolehkan: JPG, JPEG, PG</p>
+                    <p>Besar file : maksimum adalah 2 MB. Ekstensi file yang diperbolehkan: JPG, JPEG, PG</p>
                 </div>
-                <button>Switch Account</button>
-                <button>Delete Account</button>
+                <button onclick="switchAcc()">Switch Account</button>
+                <!-- <button>Delete Account</button> -->
             </div>
             <div class="detail-profile">
                 <div class="item">
                     <p class="title">Nama</p>
-                    <input type="text">
+                    <input type="text" placeholder="">
                 </div>
                 <div class="item">
                     <p class="title">Tanggal Lahir</p>
@@ -129,6 +129,10 @@
         document.getElementsByClassName("logo")[0].addEventListener("click", function() {
             window.location.href = "index.html";
         });
+
+        function switchAcc() {
+            window.location.href = "login.html";
+        }
     </script>
     
 </body>
