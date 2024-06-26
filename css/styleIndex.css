@@ -2,12 +2,15 @@
 *{
     padding: 0;
     margin: 0;
+
     scroll-behavior: smooth;
 }
 body{
     line-height: 1.6;
     font-family: "Plus Jakarta Sans", sans-serif;
     min-width: 800px;
+        
+   
     /* display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,7 +75,7 @@ nav{
 }
 
 .menu li.btn-regis a:hover {
-  /* lagi sadar iki udu button tai */
+  /* lagi sadar iki udu button  */
 }
 
 
