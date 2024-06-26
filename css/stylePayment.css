@@ -39,6 +39,9 @@ nav{
     gap: 2.1rem;
     list-style-type: none;
 }
+.logo{
+    cursor: pointer;
+}
 
 .logo p{
     font-size: 2rem;

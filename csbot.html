@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer Service</title>
-    <link rel="stylesheet" href="styleCS.css">
+    <link rel="stylesheet" href="/css/styleCS.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
     <main>
         <div class="chat">
             <div class="customer">
-                <img src="customer.png" alt="">
+                <img src="/image/customer.png" alt="">
                 <div class="customer-profile">
                     <p>Helena Hills</p>
                     <p>Active 20m ago</p>
@@ -25,31 +25,40 @@
             <div class="message-container">
                 <input type="text" class="message-input" placeholder="Enter your message">
                 <div class="icon-container">
-                    <img src="Arrow_right_circle.png" alt="send" class="icon">
+                    <img src="/image/Arrow_right_circle.png" alt="send" class="icon">
                 
                 </div>
             </div>
         </div>
 
         <div class="profile-cs">
-            <img src="cs.png" alt="">
+            <img src="/image/cs.png" alt="">
             <p class="name">Mba Jaya</p>
             <p class="ket">Chat bot fast respon</p>
             <a href="csadmin.html">NOT SATISFIED</a>
             <div class="menu">
                 <div class="menu-item">
-                    <img src="Fill=True.png" alt="">
+                    <img src="/image/Fill=True.png" alt="">
                     <p>Search chat</p>
                 </div>
                 <div class="menu-item">
                     <img src="/image/settings-asset.jpeg" alt="">
                     <p>More options</p>
                 </div>
+                <div class="menu-item back">
+                    <img src="/image/back.png" alt="">
+                    <p>Back</p>
+                </div>
             </div>
 
         </div>
 
     </main>
+    <script>
+        document.getElementsByClassName("back")[0].addEventListener("click", function() {
+            window.location.href = "index.html";
+        });
+    </script>
     
 </body>
 </html>

@@ -76,10 +76,12 @@ nav{
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+
 .logo {
     font-size: 24px;
     font-weight: bold;
     color: #FF4500;
+    cursor: pointer;
 }
 
 nav ul {
