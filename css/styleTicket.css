@@ -193,8 +193,13 @@ main{
     flex-direction: column;
     justify-content: center;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
-    
 }
+
+.myprofile a{
+    text-decoration: none;
+    color: black;
+}
+
 .driver{
     display: flex;
     padding: 1rem 1.5rem 2.1rem 1.5rem;
